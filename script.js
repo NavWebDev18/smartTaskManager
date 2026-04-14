@@ -30,7 +30,7 @@ function onTodoStatusChange(labelId,todoId){
     let labelE = document.getElementById(labelId);
     labelE.classList.toggle("checkbox-label-checked");
 
-    let todoObjectIndex = findIndex(function(eachtodo){
+    let todoObjectIndex = todoList.findIndex(function(eachtodo){
         let todoIndex = "todo" + eachtodo.Uid;
         if (todoIndex === todoId) return true;
         else return false;
