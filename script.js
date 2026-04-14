@@ -2,10 +2,6 @@ let todoItemsContainer = document.getElementById("todoItemsContainer");
 let todoUserInput = document.getElementById("todoUserInput");
 let addTodoButton = document.getElementById("addTodoButton");
 let saveBtn = document.getElementById("todoSaveBtn");
-let removeBtn = document.getElementById("todoRemoveBtn");
-removeBtn.onclick = function(){
-    localStorage.removeItem("todoList");
-}
 
 function getFromLocalStorage(){
     let stringifyList = localStorage.getItem("todoList");
